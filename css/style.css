@@ -84,7 +84,11 @@ header{
 .menu>li{
 	list-style: none;
 	display: inline-block;
+	
+}
+.menu>li>a{
 	padding: 7px 40px 7px 9px;
+	display: block;
 }
 .menu p{
 	font-size: 7px;
@@ -93,19 +97,20 @@ header{
 }
 .submenu{
 	position: absolute;
-	margin-top:8px;
 	display: none;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 }
 .submenu li{
-	padding: 0px 40px 9px 9px;
-	margin-left: -9px;
 	list-style: none;
 	background-color: #323232;
 }
-.submenu li:first-child{
+.submenu a{
+	padding: 0px 40px 9px 9px;
+	display: block;
+}
+.submenu a:first-child{
 	padding-top: 7px;
 }
 .menu>li:hover>.submenu{
@@ -148,13 +153,11 @@ header{
   line-height: 1.714;
 }
 footer p{
-	margin-top:-5px;
-  font-size: 40px;
-  font-family: "Tahoma";
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.2;
-  text-align: center;
-  -moz-transform: matrix( 0.30025102042405,0,0,0.30025102042405,0,0);
-  -webkit-transform: matrix( 0.30025102042405,0,0,0.30025102042405,0,0);
-  -ms-transform: matrix( 0.30025102042405,0,0,0.30025102042405,0,0);
+	margin: 10px;
+	font-size: 12px;
+	font-family: "Tahoma";
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.2;
+	text-align: center;
+	
 }
